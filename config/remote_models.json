@@ -1,0 +1,10 @@
+{
+  "models": [],
+  "example_only": {
+    "id": "copy-exact-model-id-from-deepinfra",
+    "label": "LLaMA or Mistral",
+    "input_usd_per_million": null,
+    "output_usd_per_million": null,
+    "pricing_verified_on": null
+  }
+}

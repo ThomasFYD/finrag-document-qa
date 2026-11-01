@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "finrag-lab"
+version = "0.1.0"
+description = "Reproducible, bilingual financial-document retrieval and grounded QA"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+  "pypdf==6.21.4", "langchain-core>=1,<2", "langchain-text-splitters>=1,<2",
+  "sentence-transformers>=5,<6", "numpy>=2,<3", "rank-bm25==0.2.2",
+  "httpx>=0.28,<0.29", "python-dotenv>=1,<2", "streamlit>=1.50,<2"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[project.scripts]
+finrag = "finrag.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["integration: requires the downloaded model and sample PDF"]

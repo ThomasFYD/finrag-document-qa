@@ -1,0 +1,926 @@
+{
+  "version": "1.0",
+  "description": "Hand-authored evidence groups, frozen before first evaluation. Related facts stay within split; T22 combines two test-only facts. No generated answers used as ground truth.",
+  "questions": [
+    {
+      "id": "D01",
+      "split": "dev",
+      "category": "units",
+      "answerable": true,
+      "question": "What was Q2 FY2025 revenue, in millions of dollars?",
+      "reference_answer": "30,040 million USD",
+      "evidence": [
+        {
+          "alternatives": [
+            {
+              "doc_id": "nvidia-fy2025-q2",
+              "pages": [
+                1,
+                3
+              ],
+              "contains": [
+                "Revenue",
+                "30,040",
+                "millions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D02",
+      "split": "dev",
+      "category": "bilingual",
+      "answerable": true,
+      "question": "数据中心业务第二季度收入是多少，同比增长多少？",
+      "reference_answer": "26.3 billion USD; 154% year over year",
+      "evidence": [
+        {
+          "alternatives": [
+            {
+              "doc_id": "nvidia-fy2025-q2",
+              "pages": [
+                2
+              ],
+              "contains": [
+                "Data Center",
+                "26.3 billion",
+                "154%"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D03",
+      "split": "dev",
+      "category": "date",
+      "answerable": true,
+      "question": "When did NVIDIA complete its ten-for-one stock split?",
+      "reference_answer": "June 7, 2024",
+      "evidence": [
+        {
+          "alternatives": [
+            {
+              "doc_id": "nvidia-fy2025-q2",
+              "pages": [
+                1
+              ],
+              "contains": [
+                "June 7, 2024",
+                "ten-for-one"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D04",
+      "split": "dev",
+      "category": "multiple_facts",
+      "answerable": true,
+      "question": "下次现金股息每股多少，什么时候支付，股权登记日是哪天？",
+      "reference_answer": "0.01 USD/share; payment October 3, 2024; record September 12, 2024",
+      "evidence": [
+        {
+          "alternatives": [
+            {
+              "doc_id": "nvidia-fy2025-q2",
+              "pages": [
+                1
+              ],
+              "contains": [
+                "0.01 per share",
+                "October 3, 2024",
+                "September 12, 2024"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D05",
+      "split": "dev",
+      "category": "cross_page",
+      "answerable": true,
+      "question": "What was net cash provided by operating activities for the six months ended July 28, 2024?",
+      "reference_answer": "29,833 million USD",
+      "evidence": [
+        {
+          "alternatives": [
+            {
+              "doc_id": "nvidia-fy2025-q2",
+              "pages": [
+                6,
+                8
+              ],
+              "contains": [
+                "Net cash provided by operating",
+                "29,833",
+                "Six Months",
+                "millions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D06",
+      "split": "dev",
+      "category": "gaap",
+      "answerable": true,
+      "question": "第二季度 GAAP 净利润是多少？",
+      "reference_answer": "16,599 million USD",
+      "evidence": [
+        {
+          "alternatives": [
+            {
+              "doc_id": "nvidia-fy2025-q2",
+              "pages": [
+                1,
+                4,
+                7
+              ],
+              "contains": [
+                "Net income",
+                "16,599",
+                "millions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D07",
+      "split": "dev",
+      "category": "gaap",
+      "answerable": true,
+      "question": "What were Q2 FY2025 GAAP operating expenses?",
+      "reference_answer": "3,932 million USD",
+      "evidence": [
+        {
+          "alternatives": [
+            {
+              "doc_id": "nvidia-fy2025-q2",
+              "pages": [
+                1,
+                3,
+                7
+              ],
+              "contains": [
+                "operating expenses",
+                "3,932",
+                "millions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D08",
+      "split": "dev",
+      "category": "qualitative",
+      "answerable": true,
+      "question": "Are the report’s forward-looking statements guarantees of future performance?",
+      "reference_answer": "No; they are not guarantees of future performance.",
+      "evidence": [
+        {
+          "alternatives": [
+            {
+              "doc_id": "nvidia-fy2025-q2",
+              "pages": [
+                9
+              ],
+              "contains": [
+                "not guarantees of future performance"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D09",
+      "split": "dev",
+      "category": "gaap",
+      "answerable": true,
+      "question": "Q2 FY2025 非 GAAP 毛利率是多少？",
+      "reference_answer": "75.7%",
+      "evidence": [
+        {
+          "alternatives": [
+            {
+              "doc_id": "nvidia-fy2025-q2",
+              "pages": [
+                1,
+                7
+              ],
+              "contains": [
+                "Non-GAAP",
+                "gross margin",
+                "75.7"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D10",
+      "split": "dev",
+      "category": "outlook",
+      "answerable": true,
+      "question": "What is NVIDIA’s expected Q3 FY2025 tax rate and range?",
+      "reference_answer": "17%, plus or minus 1%",
+      "evidence": [
+        {
+          "alternatives": [
+            {
+              "doc_id": "nvidia-fy2025-q2",
+              "pages": [
+                2
+              ],
+              "contains": [
+                "tax rates",
+                "17%",
+                "minus 1%"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T01",
+      "split": "test",
+      "category": "bilingual",
+      "answerable": true,
+      "question": "游戏业务第二季度收入及同比增长率分别是多少？",
+      "reference_answer": "2.9 billion USD; 16% year over year",
+      "evidence": [
+        {
+          "alternatives": [
+            {
+              "doc_id": "nvidia-fy2025-q2",
+              "pages": [
+                2
+              ],
+              "contains": [
+                "Gaming",
+                "2.9 billion",
+                "16%"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T02",
+      "split": "test",
+      "category": "bilingual",
+      "answerable": true,
+      "question": "汽车业务第二季度收入多少，同比增长多少？",
+      "reference_answer": "346 million USD; 37% year over year",
+      "evidence": [
+        {
+          "alternatives": [
+            {
+              "doc_id": "nvidia-fy2025-q2",
+              "pages": [
+                2
+              ],
+              "contains": [
+                "Automotive",
+                "346 million",
+                "37%"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T03",
+      "split": "test",
+      "category": "segment",
+      "answerable": true,
+      "question": "What was second-quarter Professional Visualization revenue and its year-over-year growth?",
+      "reference_answer": "454 million USD; 20% year over year",
+      "evidence": [
+        {
+          "alternatives": [
+            {
+              "doc_id": "nvidia-fy2025-q2",
+              "pages": [
+                2
+              ],
+              "contains": [
+                "Professional Visualization",
+                "454 million",
+                "20%"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T04",
+      "split": "test",
+      "category": "period",
+      "answerable": true,
+      "question": "截至 2024 年 7 月 28 日的六个月收入是多少？不要季度收入。",
+      "reference_answer": "56,084 million USD",
+      "evidence": [
+        {
+          "alternatives": [
+            {
+              "doc_id": "nvidia-fy2025-q2",
+              "pages": [
+                3
+              ],
+              "contains": [
+                "Revenue",
+                "56,084",
+                "Six Months",
+                "millions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T05",
+      "split": "test",
+      "category": "gaap",
+      "answerable": true,
+      "question": "What was the GAAP gross margin for Q2 FY2025?",
+      "reference_answer": "75.1%",
+      "evidence": [
+        {
+          "alternatives": [
+            {
+              "doc_id": "nvidia-fy2025-q2",
+              "pages": [
+                1,
+                7
+              ],
+              "contains": [
+                "GAAP",
+                "Gross margin",
+                "75.1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T06",
+      "split": "test",
+      "category": "cross_page",
+      "answerable": true,
+      "question": "What was GAAP net income for the six months ended July 28, 2024?",
+      "reference_answer": "31,480 million USD",
+      "evidence": [
+        {
+          "alternatives": [
+            {
+              "doc_id": "nvidia-fy2025-q2",
+              "pages": [
+                4,
+                7
+              ],
+              "contains": [
+                "Net income",
+                "31,480",
+                "Six Months",
+                "millions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T07",
+      "split": "test",
+      "category": "balance_sheet",
+      "answerable": true,
+      "question": "2024 年 7 月 28 日，现金、现金等价物及有价证券总额是多少？",
+      "reference_answer": "34,800 million USD",
+      "evidence": [
+        {
+          "alternatives": [
+            {
+              "doc_id": "nvidia-fy2025-q2",
+              "pages": [
+                4
+              ],
+              "contains": [
+                "Cash, cash equivalents and marketable securities",
+                "34,800",
+                "millions",
+                "July 28"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T08",
+      "split": "test",
+      "category": "cross_page",
+      "answerable": true,
+      "question": "What were total liabilities on July 28, 2024?",
+      "reference_answer": "27,070 million USD",
+      "evidence": [
+        {
+          "alternatives": [
+            {
+              "doc_id": "nvidia-fy2025-q2",
+              "pages": [
+                5
+              ],
+              "contains": [
+                "Total liabilities",
+                "27,070",
+                "millions",
+                "July 28"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T09",
+      "split": "test",
+      "category": "cross_page",
+      "answerable": true,
+      "question": "前六个月自由现金流是多少？",
+      "reference_answer": "28,418 million USD",
+      "evidence": [
+        {
+          "alternatives": [
+            {
+              "doc_id": "nvidia-fy2025-q2",
+              "pages": [
+                8
+              ],
+              "contains": [
+                "Free cash flow",
+                "28,418",
+                "Six Months",
+                "millions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T10",
+      "split": "test",
+      "category": "date",
+      "answerable": true,
+      "question": "董事会在 2024 年 8 月 26 日额外批准了多少股票回购额度？有到期日吗？",
+      "reference_answer": "50.0 billion USD; no expiration",
+      "evidence": [
+        {
+          "alternatives": [
+            {
+              "doc_id": "nvidia-fy2025-q2",
+              "pages": [
+                1
+              ],
+              "contains": [
+                "August 26, 2024",
+                "50.0 billion",
+                "without expiration"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T11",
+      "split": "test",
+      "category": "outlook",
+      "answerable": true,
+      "question": "What is the Q3 FY2025 revenue outlook and its tolerance?",
+      "reference_answer": "32.5 billion USD plus or minus 2%",
+      "evidence": [
+        {
+          "alternatives": [
+            {
+              "doc_id": "nvidia-fy2025-q2",
+              "pages": [
+                2
+              ],
+              "contains": [
+                "third quarter",
+                "Revenue",
+                "32.5 billion",
+                "minus 2%"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T12",
+      "split": "test",
+      "category": "multiple_evidence",
+      "answerable": true,
+      "question": "What were Q2 FY2025 GAAP and non-GAAP diluted earnings per share?",
+      "reference_answer": "GAAP 0.67 USD; non-GAAP 0.68 USD",
+      "evidence": [
+        {
+          "alternatives": [
+            {
+              "doc_id": "nvidia-fy2025-q2",
+              "pages": [
+                1,
+                4,
+                7
+              ],
+              "contains": [
+                "GAAP",
+                "0.67",
+                "per share"
+              ]
+            }
+          ]
+        },
+        {
+          "alternatives": [
+            {
+              "doc_id": "nvidia-fy2025-q2",
+              "pages": [
+                1,
+                7
+              ],
+              "contains": [
+                "Non-GAAP",
+                "0.68",
+                "per share"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T13",
+      "split": "test",
+      "category": "cross_page",
+      "answerable": true,
+      "question": "How much net cash did operating activities provide in the three months ended July 28, 2024?",
+      "reference_answer": "14,489 million USD",
+      "evidence": [
+        {
+          "alternatives": [
+            {
+              "doc_id": "nvidia-fy2025-q2",
+              "pages": [
+                6,
+                8
+              ],
+              "contains": [
+                "Net cash provided by operating",
+                "14,489",
+                "Three Months",
+                "millions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T14",
+      "split": "test",
+      "category": "balance_sheet",
+      "answerable": true,
+      "question": "截至 2024 年 7 月 28 日的总资产是多少？",
+      "reference_answer": "85,227 million USD",
+      "evidence": [
+        {
+          "alternatives": [
+            {
+              "doc_id": "nvidia-fy2025-q2",
+              "pages": [
+                4
+              ],
+              "contains": [
+                "Total assets",
+                "85,227",
+                "millions",
+                "July 28"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T15",
+      "split": "test",
+      "category": "table",
+      "answerable": true,
+      "question": "What was research and development expense for the three months ended July 28, 2024?",
+      "reference_answer": "3,090 million USD",
+      "evidence": [
+        {
+          "alternatives": [
+            {
+              "doc_id": "nvidia-fy2025-q2",
+              "pages": [
+                3
+              ],
+              "contains": [
+                "Research and development",
+                "3,090",
+                "Three Months",
+                "millions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T16",
+      "split": "test",
+      "category": "cross_page",
+      "answerable": true,
+      "question": "截至 2024 年 7 月 28 日的六个月所得税费用是多少？",
+      "reference_answer": "5,013 million USD",
+      "evidence": [
+        {
+          "alternatives": [
+            {
+              "doc_id": "nvidia-fy2025-q2",
+              "pages": [
+                4
+              ],
+              "contains": [
+                "Income tax expense",
+                "5,013",
+                "Six Months",
+                "millions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T17",
+      "split": "test",
+      "category": "table",
+      "answerable": true,
+      "question": "What was total stock-based compensation expense in the Q2 FY2025 cash flow statement?",
+      "reference_answer": "1,154 million USD",
+      "evidence": [
+        {
+          "alternatives": [
+            {
+              "doc_id": "nvidia-fy2025-q2",
+              "pages": [
+                5
+              ],
+              "contains": [
+                "Stock-based compensation expense",
+                "1,154",
+                "Three Months",
+                "millions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T18",
+      "split": "test",
+      "category": "cross_page",
+      "answerable": true,
+      "question": "What was cash paid for income taxes, net, for the three months ended July 28, 2024?",
+      "reference_answer": "7,208 million USD",
+      "evidence": [
+        {
+          "alternatives": [
+            {
+              "doc_id": "nvidia-fy2025-q2",
+              "pages": [
+                6
+              ],
+              "contains": [
+                "Cash paid for income taxes, net",
+                "7,208",
+                "Three Months",
+                "millions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T19",
+      "split": "test",
+      "category": "outlook_table",
+      "answerable": true,
+      "question": "In the Q3 FY2025 outlook reconciliation table, what are GAAP and non-GAAP operating expenses?",
+      "reference_answer": "GAAP 4,250 million USD; non-GAAP 3,000 million USD",
+      "evidence": [
+        {
+          "alternatives": [
+            {
+              "doc_id": "nvidia-fy2025-q2",
+              "pages": [
+                9
+              ],
+              "contains": [
+                "GAAP operating expenses",
+                "4,250",
+                "Q3 FY2025",
+                "millions"
+              ]
+            }
+          ]
+        },
+        {
+          "alternatives": [
+            {
+              "doc_id": "nvidia-fy2025-q2",
+              "pages": [
+                9
+              ],
+              "contains": [
+                "Non-GAAP operating expenses",
+                "3,000",
+                "Q3 FY2025",
+                "millions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T20",
+      "split": "test",
+      "category": "growth",
+      "answerable": true,
+      "question": "第二季度总收入相比上一季度和去年同期分别增长了多少？",
+      "reference_answer": "15% quarter over quarter; 122% year over year",
+      "evidence": [
+        {
+          "alternatives": [
+            {
+              "doc_id": "nvidia-fy2025-q2",
+              "pages": [
+                1
+              ],
+              "contains": [
+                "revenue",
+                "15%",
+                "122%"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T21",
+      "split": "test",
+      "category": "fiscal_calendar",
+      "answerable": true,
+      "question": "What calendar date ended NVIDIA’s second quarter of fiscal 2025?",
+      "reference_answer": "July 28, 2024",
+      "evidence": [
+        {
+          "alternatives": [
+            {
+              "doc_id": "nvidia-fy2025-q2",
+              "pages": [
+                1
+              ],
+              "contains": [
+                "second quarter ended July 28, 2024"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T22",
+      "split": "test",
+      "category": "multiple_evidence",
+      "answerable": true,
+      "question": "Compare Gaming and Automotive revenue in Q2 FY2025. Which was larger?",
+      "reference_answer": "Gaming 2.9 billion USD > Automotive 346 million USD",
+      "evidence": [
+        {
+          "alternatives": [
+            {
+              "doc_id": "nvidia-fy2025-q2",
+              "pages": [
+                2
+              ],
+              "contains": [
+                "Gaming",
+                "2.9 billion"
+              ]
+            }
+          ]
+        },
+        {
+          "alternatives": [
+            {
+              "doc_id": "nvidia-fy2025-q2",
+              "pages": [
+                2
+              ],
+              "contains": [
+                "Automotive",
+                "346 million"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N01",
+      "split": "dev",
+      "category": "unanswerable",
+      "answerable": false,
+      "question": "What was NVIDIA’s actual Q2 FY2026 revenue?",
+      "reference_answer": "Not in the supplied FY2025 Q2 report.",
+      "evidence": []
+    },
+    {
+      "id": "N02",
+      "split": "dev",
+      "category": "unanswerable",
+      "answerable": false,
+      "question": "苹果公司本季度的收入是多少？",
+      "reference_answer": "Not in the supplied NVIDIA report.",
+      "evidence": []
+    },
+    {
+      "id": "N03",
+      "split": "test",
+      "category": "unanswerable",
+      "answerable": false,
+      "question": "What was NVIDIA’s closing stock price on October 31, 2026?",
+      "reference_answer": "Not in this report.",
+      "evidence": []
+    },
+    {
+      "id": "N04",
+      "split": "test",
+      "category": "unanswerable",
+      "answerable": false,
+      "question": "NVIDIA 第二季度有多少名全职员工？",
+      "reference_answer": "Headcount is not disclosed in this earnings release.",
+      "evidence": []
+    },
+    {
+      "id": "N05",
+      "split": "test",
+      "category": "unanswerable",
+      "answerable": false,
+      "question": "生病延期退课需要提交什么证明？",
+      "reference_answer": "The financial report does not cover university policy.",
+      "evidence": []
+    },
+    {
+      "id": "N06",
+      "split": "test",
+      "category": "unanswerable",
+      "answerable": false,
+      "question": "What is the report’s forecast for the Bitcoin price in 2027?",
+      "reference_answer": "The report contains no such forecast.",
+      "evidence": []
+    }
+  ]
+}
